@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">May Tinh</string>
+    <string name="value01">0</string>
+    <string name="AC">AC</string>
+    <string name="button">May tinh</string>
+    <string name="calculator">Calculator</string>
+    <string name="quiz_game">Quiz Game</string>
+    <string name="app_giai_tri">App Giai Tri</string>
+</resources>
