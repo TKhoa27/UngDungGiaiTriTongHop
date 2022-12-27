@@ -67,6 +67,22 @@
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="257dp" />
+
+        <Button
+            android:id="@+id/hoangdat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/botron_btn"
+            android:padding="10dp"
+            android:text="@string/balloon"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="257dp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

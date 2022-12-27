@@ -12,7 +12,7 @@ import com.example.ungdunggiaitritonghop.QuizGame.QuizActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnQuiz, btnCalculator;
+    Button btnQuiz, btnCalculator, btnHoangDat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +21,11 @@ public class MainActivity extends AppCompatActivity {
 
         btnQuiz = findViewById(R.id.btnQuizApp);
         btnCalculator = findViewById(R.id.btnCalculatorApp);
-
+        btnHoangDat = findViewById(R.id.hoangdat);
         btnCalculator.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent( MainActivity.this, Calculator.class );
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Calculator.class);
                 startActivity(intent);
             }
         });
@@ -34,6 +34,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, MainActivityQuiz.class);
+                startActivity(intent);
+            }
+        });
+        btnHoangDat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, BalloonGameMain.class);
                 startActivity(intent);
             }
         });
