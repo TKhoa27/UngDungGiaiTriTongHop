@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.ungdunggiaitritonghop.MainActivity;
 import com.example.ungdunggiaitritonghop.MainActivityQuiz;
 import com.example.ungdunggiaitritonghop.R;
 
@@ -33,10 +34,10 @@ public class ResultActivity extends AppCompatActivity {
         wrong = getIntent().getIntExtra("wrong",0);
         empty = getIntent().getIntExtra("empty",0);
 
-        textViewTotalCorrect.setText("Total Correct Answer : "+correct);
-        textViewTotalWrong.setText("Total Wrong Answer : "+ wrong);
-        textViewTotalEmpty.setText("Total Empty Answer : "+empty);
-        textViewSuccess.setText("Success Rate : "+(correct*10));
+        textViewTotalCorrect.setText("Trả lời đúng : "+correct);
+        textViewTotalWrong.setText("Trả lời sai : "+ wrong);
+        textViewTotalEmpty.setText("Không trả lời : "+empty);
+        textViewSuccess.setText("Tỉ lệ : "+(correct*10) +"%");
 
         buttonAgain.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,10 +54,8 @@ public class ResultActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent newIntent = new Intent(Intent.ACTION_MAIN);
-                newIntent.addCategory(Intent.CATEGORY_HOME);
-                newIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(newIntent);
+                Intent intent = new Intent(ResultActivity.this, MainActivity.class);
+                startActivity(intent);
                 finish();
 
             }

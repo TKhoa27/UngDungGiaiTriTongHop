@@ -7,4 +7,11 @@
     <string name="balloon">ĐẬP THỎ</string>
     <string name="button">CÙNG HỌC</string>
     <string name="app_giai_tri">CÙNG PHÁT TRIỂN</string>
+    <string name="quiz_banner">Cùng thử sức nhé</string>
+    <string name="quiz_start">Chơi</string>
+    <string name="quiz_correct">Đúng: 0</string>
+    <string name="quiz_wrong">Sai: 0</string>
+    <string name="quiz_empty">Trống: 0</string>
+    <string name="again">Chơi lại</string>
+    <string name="quit">Menu</string>
 </resources>

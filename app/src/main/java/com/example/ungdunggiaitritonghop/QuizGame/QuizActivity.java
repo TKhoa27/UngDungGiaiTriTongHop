@@ -97,7 +97,7 @@ public class QuizActivity extends AppCompatActivity {
                 if (!buttonControl && question < 10)
                 {
                     empty++;
-                    textViewEmpty.setText("Empty : "+empty);
+                    textViewEmpty.setText("Bỏ trống : "+empty);
                     loadQuestions();
                 }
                 else if (buttonControl && question < 10)
@@ -132,7 +132,7 @@ public class QuizActivity extends AppCompatActivity {
 
     public void loadQuestions()
     {
-        textViewQuestion.setText("Question : "+(question+1));
+        textViewQuestion.setText("Câu hỏi : "+(question+1));
 
         correctFlag = questionsList.get(question);
 
@@ -197,8 +197,8 @@ public class QuizActivity extends AppCompatActivity {
         buttonC.setClickable(false);
         buttonD.setClickable(false);
 
-        textViewCorrect.setText("Correct : "+correct);
-        textViewWrong.setText("Wrong : "+wrong);
+        textViewCorrect.setText("Đúng : "+correct);
+        textViewWrong.setText("Sai : "+wrong);
 
         buttonControl = true;
     }

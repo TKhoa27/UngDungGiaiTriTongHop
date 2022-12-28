@@ -73,7 +73,7 @@ public class BalloonGameMain extends AppCompatActivity {
                     @Override
                     public void onTick(long millisUntilFinished) {
 
-                        textViewTime.setText("Remaining Time : "+millisUntilFinished/1000);
+                        textViewTime.setText("Thời gian : "+millisUntilFinished/1000);
 
                     }
 
@@ -95,7 +95,7 @@ public class BalloonGameMain extends AppCompatActivity {
     public void increaseScoreByOne(View view)
     {
         score++;
-        textViewScore.setText("Score : "+score);
+        textViewScore.setText("Điểm : "+score);
 
         if (view.getId() == balloon1.getId())
         {
