@@ -12,6 +12,10 @@
     <string name="quiz_correct">Đúng: 0</string>
     <string name="quiz_wrong">Sai: 0</string>
     <string name="quiz_empty">Trống: 0</string>
+    <string name="quiz_rate">Đúng: 0%</string>
+    <string name="quiz_ok">Đúng</string>
+    <string name="quiz_fl">Sai</string>
+    <string name="quiz_emp">Trống</string>
     <string name="again">Chơi lại</string>
     <string name="quit">Menu</string>
 </resources>
