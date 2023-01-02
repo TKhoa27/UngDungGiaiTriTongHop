@@ -8,42 +8,23 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.ungdunggiaitritonghop.Caculator.Calculator;
-import com.example.ungdunggiaitritonghop.QuizGame.QuizActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnQuiz, btnCalculator, btnHoangDat;
-
+    Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnQuiz = findViewById(R.id.btnQuizApp);
-        btnCalculator = findViewById(R.id.btnCalculatorApp);
-        btnHoangDat = findViewById(R.id.hoangdat);
-        btnCalculator.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Calculator.class);
-                startActivity(intent);
-            }
-        });
+        btn = findViewById(R.id.button);
 
-        btnQuiz.setOnClickListener(new View.OnClickListener() {
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MainActivityQuiz.class);
+                Intent intent = new Intent( MainActivity.this, Calculator.class );
                 startActivity(intent);
             }
         });
-        btnHoangDat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, BalloonGameMain.class);
-                startActivity(intent);
-            }
-        });
-
     }
 }

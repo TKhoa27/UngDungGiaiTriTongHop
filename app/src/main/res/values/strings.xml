@@ -2,20 +2,5 @@
     <string name="app_name">May Tinh</string>
     <string name="value01">0</string>
     <string name="AC">AC</string>
-    <string name="calculator">MÁY TÍNH VUI VẺ</string>
-    <string name="quiz_game">CÂU ĐỐ BÓNG ĐÁ</string>
-    <string name="balloon">ĐẬP THỎ</string>
-    <string name="button">CÙNG HỌC</string>
-    <string name="app_giai_tri">CÙNG PHÁT TRIỂN</string>
-    <string name="quiz_banner">Cùng thử sức nhé</string>
-    <string name="quiz_start">Chơi</string>
-    <string name="quiz_correct">Đúng: 0</string>
-    <string name="quiz_wrong">Sai: 0</string>
-    <string name="quiz_empty">Trống: 0</string>
-    <string name="quiz_rate">Đúng: 0%</string>
-    <string name="quiz_ok">Đúng</string>
-    <string name="quiz_fl">Sai</string>
-    <string name="quiz_emp">Trống</string>
-    <string name="again">Chơi lại</string>
-    <string name="quit">Menu</string>
+    <string name="button">May tinh</string>
 </resources>

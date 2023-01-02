@@ -110,7 +110,9 @@ public class Calculator extends AppCompatActivity {
 
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {numberClick("6"); }
+            public void onClick(View v) {
+                numberClick("6");
+            }
         });
 
         btn7.setOnClickListener(new View.OnClickListener() {
@@ -160,7 +162,7 @@ public class Calculator extends AppCompatActivity {
                 }
                 else
                 {
-                    number = number.substring(0, number.length()-1);
+                    number = number.substring(0,number.length()-1);
 
                     if (number.length() == 0)
                     {
